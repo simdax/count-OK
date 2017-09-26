@@ -1,0 +1,5 @@
+trap break INT
+while true ; do
+    (time ./a.out) 2>> record.txt 
+done
+cat record.txt | grep real
